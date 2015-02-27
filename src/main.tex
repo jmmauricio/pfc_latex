@@ -1,0 +1,176 @@
+\documentclass[11pt,a4paper,twoside,titlepage]{book}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{subfig}
+\usepackage{url}
+\usepackage{float}
+\usepackage{rotating}
+%\pagestyle{myheadings}
+\usepackage{lscape}
+\usepackage{enumitem}
+\usepackage{longtable}
+\hyphenation{oddword}
+\usepackage[spanish]{babelbib}
+% \usepackage{tocbibind}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\markright{ Proyecto:   \hfill Trabajo Fin de Grado/Carrera\hfill}
+
+%%%PAGINA IZQUIERDA
+
+\setlength{\paperheight}{29.6cm}%%Tamaño vertical del papel
+ \setlength{\paperwidth}{21cm}%%Tamaño horizontal del papel
+%\setlength{\voffset}{-1in}
+\setlength{\voffset}{-0.7in}
+\setlength{\topmargin}{2.5cm}%%Margen superior a la cabeza
+%\setlength{\headheight}{5pt}%%Tamaño de la cabeza de pagina
+%\setlength{\headsep}{0.7cm} %%Distancia entre la cabeza y el texto
+\setlength{\headsep}{1.2cm} %%Distancia entre la cabeza y el texto
+%\setlength{\textheight}{22.5cm}%%Largo de texto
+\setlength{\textheight}{21.5cm}%%Largo de texto
+\setlength{\footskip}{1.2cm}%%
+\setlength{\hoffset}{-1in} %%Distancia entre la cabeza y el texto
+\setlength{\oddsidemargin}{4cm}%%Margen izquierdo pag.par
+%\setlength{\oddsidemargin}{5cm}%%Margen izquierdo pag.par
+\setlength{\textwidth}{14cm}%%Ancho de texto
+%\setlength{\textwidth}{13cm}%%Ancho de texto
+
+%%%%PAGINA DERECHA
+
+\setlength{\evensidemargin}{3cm}%%Margen izquierdo pag.impar
+
+
+
+%\setlength{\topskip}{0cm}%%
+\setlength{\marginparwidth}{0cm}%%
+ \setlength{\marginparsep}{0cm}
+
+% Code for creating empty pages
+% No headers on empty pages before new chapter
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+    \hbox{}
+    \thispagestyle{plain}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
+
+%\includeonly{Programa,Resultados}
+
+\author{Ivan Nieto}
+\title{Tesis de Master}
+
+% \bibliographystyle{plain}
+\bibliographystyle{unsrt}
+
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+
+
+\renewcommand{\thepage}{\roman{page}}
+\setcounter{page}{1}
+\renewcommand{\appendixname}{Anexo}
+ 
+\begin{document}
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CARATULA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+		\vspace*{-2.5cm}
+	\begin{figure}
+		\centering
+		% Requires \usepackage{graphicx}
+	 	 \includegraphics[width=6cm]{eps_us}\\
+	\end{figure}
+	\begin{center}
+		\vspace*{1.5cm} {\large UNIVERSIDAD DE SEVILLA} \\[0.3cm] {\large
+		Departamento de Ingenieria Eléctrica}
+		\vspace*{0.5cm}
+	
+		\noindent \rule{\textwidth}{0.5pt}%%
+		\vspace*{0.5cm}
+		%{\Large\bf
+		%{\huge \scshape
+		{\Large \scshape
+		%\begin{tabular}{c}
+			%\hspace*{-0.2cm} Control no lineal de FACTS y\\
+			%\hspace*{-0.2cm} generación  no convencional para la mejora\\
+			%\hspace*{-0.2cm} dinámica de los sistemas de potencia.\\
+		%\end{tabular}}
+	
+		%\begin{tabular}{c}
+			%\hspace*{-0.3cm} Control no lineal de FACTS y generación no convencional \\
+			%\hspace*{-0.2cm} para la mejora dinámica de los sistemas de potencia\\
+		%\end{tabular}}
+	
+		\begin{tabular}{c}
+			\hspace*{-0.22cm} Modelado y simulación \\ de una fuente de generación fotovoltaica    \\
+
+		\end{tabular}}
+	
+		\vspace*{0.5cm}
+		\noindent \rule{\textwidth}{0.5pt}%%
+		\vspace*{2.0cm}
+	
+		{\Large\bf Tesis de Master 2015}
+	
+	
+	
+		\vspace*{0.3cm}
+		{\large Autor:}
+		\vspace*{0.5cm}
+		{\large\bf nombre del autor} \vspace*{0.5cm}
+	
+	\vspace*{0.3cm}
+		{\large Director TFM:}
+		\vspace*{0.5cm}
+		{\large\bf  nombre de tutor/director } \vspace*{0.5cm}
+		
+		\vspace*{2cm} {\large Sevilla, Junio de 2015}
+	\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+ 
+\chapter*{Agradecimientos}
+Agradecimientos
+
+
+\thispagestyle{empty}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+\include{intro/intro}
+\include{model/model}
+\include{conclusion/conclusion}
+\end{document}
