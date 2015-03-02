@@ -9,5 +9,7 @@
 \contentsline {subsection}{\numberline {2.1.3}Ecuaciones de fasores o complejos}{5}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Tablas}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Tablas sin entorno}{5}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Tablas con entorno}{7}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Conclusiones}{9}{chapter.3}
+\contentsline {subsection}{\numberline {2.2.2}Tablas con entorno}{6}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Figuras}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Citas}{6}{section.2.4}
+\contentsline {chapter}{\numberline {3}Conclusiones}{7}{chapter.3}
